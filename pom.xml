@@ -56,6 +56,12 @@
             <artifactId>commons-collections4</artifactId>
             <version>4.4</version>
         </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+            <scope>compile</scope>
+        </dependency>
 
     </dependencies>
     <build>
@@ -70,6 +76,7 @@
                         <driverName>chrome</driverName>
                         <base.email>toyeyi1115@sartess.com</base.email>
                         <base.password>Qwerty123</base.password>
+                        <browser.mode>start-maximized</browser.mode>
                     </systemProperties>
                 </configuration>
             </plugin>
