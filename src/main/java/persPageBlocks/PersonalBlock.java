@@ -4,6 +4,7 @@ package persPageBlocks;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import utils.BaseComponent;
 
 public class PersonalBlock extends BaseComponent {
 

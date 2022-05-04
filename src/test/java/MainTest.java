@@ -19,7 +19,6 @@ import java.util.List;
 
 public class MainTest {
     private static WebDriver driver;
-    private static final Logger logger = LogManager.getLogger(MainTest.class);
     private static final WebDriverName webDriverName = WebDriverName.valueOf(System.getProperty("driverName")); //chrome
 
     @BeforeClass
@@ -29,7 +28,7 @@ public class MainTest {
 
     @Before
     public void startInitBrowser() throws DriverNotFoundException {
-        driver = DriverManager.initDriver(webDriverName, List.of(System.getProperty("browser.mode")));
+       driver = DriverManager.initDriver(webDriverName, List.of(System.getProperty("browser.mode")));
     }
 
     @After
@@ -39,7 +38,7 @@ public class MainTest {
 
 
     @Test
-    public void testPersPageFill() throws DriverNotFoundException {
+    public void testPersPageFillandCheck() throws DriverNotFoundException {
         persPageFill();
         persPageCheck();
     }

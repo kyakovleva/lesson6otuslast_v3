@@ -1,25 +1,20 @@
 package persPageBlocks;
 
-import config.ServerConfig;
 import config.model.Contact;
 import enums.ContactTypes;
-import org.aeonbits.owner.ConfigFactory;
 import org.apache.commons.collections4.CollectionUtils;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import pages.PersPage;
+import utils.BaseComponent;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 public class ContactsBlock extends BaseComponent {
-    private static final Logger logger = LogManager.getLogger(PersPage.class);
-    private final ServerConfig serverConfig = ConfigFactory.create(ServerConfig.class);
+
     private final By deleteButtonContainer = By.xpath(".//div[(contains(@class,'container__col') and contains(@class,'container__col_12') and contains(@class,'container__col_md-0'))]");
     private final By deleteButton = By.xpath(".//button[contains(@class, 'js-formset-delete')]");
 
