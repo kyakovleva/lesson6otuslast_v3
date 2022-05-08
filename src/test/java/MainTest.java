@@ -18,7 +18,7 @@ import persPageBlocks.PersonalBlock;
 import java.util.List;
 
 public class MainTest {
-    private static WebDriver driver;
+    private WebDriver driver;
     private static final WebDriverName webDriverName = WebDriverName.valueOf(System.getProperty("driverName")); //chrome
 
     @BeforeClass
@@ -43,8 +43,7 @@ public class MainTest {
         persPageCheck();
     }
 
-    private void persPageCheck() throws DriverNotFoundException {
-        //Проверить, что в разделе "О себе" отображаются указанные ранее данные
+    private void persPageCheck() throws DriverNotFoundException{
         startInitBrowser();
         MainPage mainPage = new MainPage(driver);
         PersPage persPage = new PersPage(driver);
@@ -61,7 +60,6 @@ public class MainTest {
     }
 
     private void persPageFill() {
-        // Открыть Chrome в режиме полного экрана
         MainPage mainPage = new MainPage(driver);
         PersPage persPage = new PersPage(driver);
         PersonalBlock personalData = new PersonalBlock(driver);
@@ -69,28 +67,22 @@ public class MainTest {
         ContactsBlock contactsBlock = new ContactsBlock(driver);
         LanguageBlock languageBlock = new LanguageBlock(driver);
 
-        //Перейти на https://otus.ru
         mainPage.open();
         mainPage.auth();
 
-        //Открыть страницу Персональные данные
         persPage.open();
 
-        //Заполнение Персональных данных
         personalData.fillPersonalData();
 
-        //Заполнение данных о местоположении
         countryData.fillCountryData();
 
-        //Заполнение данных о знании языка
         languageBlock.fillLanguageLevel();
 
-        //Добавление двух контактов
         contactsBlock.addContacts();
 
-        //Нажать сохранить
+
         persPage.saveData();
-        //Закрыть страницу
+
         DriverManager.close(driver);
     }
 }

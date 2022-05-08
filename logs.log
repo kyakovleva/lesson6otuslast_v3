@@ -1565,3 +1565,17 @@
 2022-05-04 20:06:42,667 INFO p.PersPage [main] Данные сохраненных страны и города отображаются корректно
 2022-05-04 20:06:42,949 INFO p.PersPage [main] Данные контактов отображаются корректно
 2022-05-04 20:06:42,997 INFO p.PersPage [main] Данные сохраненного языка отображаются корректно
+2022-05-08 12:11:23,221 INFO u.DriverManager [main] Драйвер поднят с опциями = [start-maximized]
+2022-05-08 12:27:24,233 INFO u.DriverManager [main] Драйвер поднят с опциями = [start-maximized]
+2022-05-08 12:28:14,151 INFO u.DriverManager [main] Драйвер поднят с опциями = [start-maximized]
+2022-05-08 12:32:00,341 INFO u.DriverManager [main] Драйвер поднят с опциями = [start-maximized]
+2022-05-08 12:33:16,383 INFO u.DriverManager [main] Драйвер поднят с опциями = [start-maximized]
+2022-05-08 12:35:53,889 INFO u.DriverManager [main] Драйвер поднят с опциями = [start-maximized]
+2022-05-08 12:38:15,972 INFO u.DriverManager [main] Драйвер поднят с опциями = [start-maximized]
+2022-05-08 12:39:07,881 INFO u.DriverManager [main] Драйвер поднят с опциями = [start-maximized]
+2022-05-08 12:40:59,451 INFO u.DriverManager [main] Драйвер поднят с опциями = [start-maximized]
+2022-05-08 12:41:34,815 INFO u.DriverManager [main] Драйвер поднят с опциями = [start-maximized]
+2022-05-08 12:42:12,779 INFO u.DriverManager [main] Драйвер поднят с опциями = [start-maximized]
+2022-05-08 12:42:59,686 INFO u.DriverManager [main] Драйвер поднят с опциями = [start-maximized]
+2022-05-08 12:45:10,442 INFO u.DriverManager [main] Драйвер поднят с опциями = [start-maximized]
+2022-05-08 12:47:44,216 INFO u.DriverManager [main] Драйвер поднят с опциями = [start-maximized]

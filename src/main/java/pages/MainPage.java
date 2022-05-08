@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import utils.BaseComponent;
+import persPageBlocks.BaseComponent;
 
 public class MainPage extends BaseComponent {
 
@@ -28,13 +28,14 @@ public class MainPage extends BaseComponent {
     }
 
     public void auth() {
+        wait.waitUntilTextPresents(authButton, "Вход");
         authButton.click();
         emailField.sendKeys(System.getProperty("base.email"));
         passwordField.sendKeys(System.getProperty("base.password"));
         loginButton.click();
 
         String newUserName = loginName.getText();
-        Assert.assertEquals("Пользователь не верен", "toyey", newUserName);
+        Assert.assertEquals("Пользователь не верен", serverConfig.name(), newUserName);
         logger.info("Пользователь авторизован");
     }
 }

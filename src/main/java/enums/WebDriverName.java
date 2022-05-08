@@ -1,7 +1,7 @@
 package enums;
 
 public enum WebDriverName {
-    chrome,
-    firefox,
-    edge
+    CHROME,
+    FIREFOX,
+    EDGE
 }

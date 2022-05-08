@@ -16,15 +16,15 @@ import java.util.List;
 public class WebDriverFactory {
     public static WebDriver create(WebDriverName driverName, List<String> options) throws DriverNotFoundException {
         switch (driverName) {
-            case chrome:
+            case CHROME:
                 ChromeOptions chromeOptions = new ChromeOptions();
                 chromeOptions.addArguments(options);
                 return new ChromeDriver(chromeOptions);
-            case firefox:
+            case FIREFOX:
                 FirefoxOptions firefoxOptions = new FirefoxOptions();
                 firefoxOptions.addArguments(options);
                 return new FirefoxDriver(firefoxOptions);
-            case edge:
+            case EDGE:
                 EdgeOptions edgeOptions = new EdgeOptions();
                 edgeOptions.addArguments(options);
                 return new EdgeDriver(edgeOptions);
@@ -35,13 +35,13 @@ public class WebDriverFactory {
 
     public static void initDriverManager(WebDriverName driverName) throws DriverNotFoundException {
         switch (driverName) {
-            case chrome:
+            case CHROME:
                 WebDriverManager.chromedriver().setup();
                 break;
-            case firefox:
+            case FIREFOX:
                 WebDriverManager.firefoxdriver().setup();
                 break;
-            case edge:
+            case EDGE:
                 WebDriverManager.edgedriver().setup();
                 break;
             default:
