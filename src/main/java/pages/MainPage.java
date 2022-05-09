@@ -28,7 +28,7 @@ public class MainPage extends BaseComponent {
     }
 
     public void auth() {
-        wait.waitUntilTextPresents(authButton, "Вход");
+//        wait.waitUntilTextPresents(authButton, "Вход");
         authButton.click();
         emailField.sendKeys(System.getProperty("base.email"));
         passwordField.sendKeys(System.getProperty("base.password"));

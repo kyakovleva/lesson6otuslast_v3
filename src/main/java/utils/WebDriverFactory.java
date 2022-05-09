@@ -13,12 +13,17 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 
 import java.util.List;
 
+//import static javax.swing.text.rtf.RTFAttributes.BooleanAttribute.False;
+
 public class WebDriverFactory {
     public static WebDriver create(WebDriverName driverName, List<String> options) throws DriverNotFoundException {
         switch (driverName) {
             case CHROME:
                 ChromeOptions chromeOptions = new ChromeOptions();
                 chromeOptions.addArguments(options);
+//                chromeOptions.addArguments("excludeSwitches","enable-automation");
+//                chromeOptions.addArguments("useAutomationExtension", False);
+
                 return new ChromeDriver(chromeOptions);
             case FIREFOX:
                 FirefoxOptions firefoxOptions = new FirefoxOptions();

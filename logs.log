@@ -1579,3 +1579,18 @@
 2022-05-08 12:42:59,686 INFO u.DriverManager [main] Драйвер поднят с опциями = [start-maximized]
 2022-05-08 12:45:10,442 INFO u.DriverManager [main] Драйвер поднят с опциями = [start-maximized]
 2022-05-08 12:47:44,216 INFO u.DriverManager [main] Драйвер поднят с опциями = [start-maximized]
+2022-05-09 10:51:57,574 INFO u.DriverManager [main] Драйвер поднят с опциями = [start-maximized]
+2022-05-09 11:09:46,628 INFO u.DriverManager [main] Драйвер поднят с опциями = [start-maximized]
+2022-05-09 11:11:24,544 INFO u.DriverManager [main] Драйвер поднят с опциями = [start-maximized]
+2022-05-09 11:12:52,556 INFO u.DriverManager [main] Драйвер поднят с опциями = [start-maximized]
+2022-05-09 11:12:59,817 INFO p.PersPage [main] Пользователь авторизован
+2022-05-09 11:13:01,994 INFO p.PersPage [main] Открыта страница Персональные данные
+2022-05-09 11:13:11,921 INFO p.PersPage [main] Добавляем контакт с типом VK
+2022-05-09 11:13:12,577 INFO p.PersPage [main] Добавляем контакт с типом TELEGRAM
+2022-05-09 11:13:16,197 INFO p.PersPage [main] Данные сохранены
+2022-05-09 11:13:19,760 INFO u.DriverManager [main] Драйвер поднят с опциями = [start-maximized]
+2022-05-09 11:14:10,201 INFO p.PersPage [main] Пользователь авторизован
+2022-05-09 11:14:12,063 INFO p.PersPage [main] Открыта страница Персональные данные
+2022-05-09 11:14:12,146 INFO p.PersPage [main] Данные сохраненных страны и города отображаются корректно
+2022-05-09 11:14:12,369 INFO p.PersPage [main] Данные контактов отображаются корректно
+2022-05-09 11:14:12,961 INFO p.PersPage [main] Данные сохраненного языка отображаются корректно
