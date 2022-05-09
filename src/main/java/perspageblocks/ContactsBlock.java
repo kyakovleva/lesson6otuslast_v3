@@ -1,4 +1,4 @@
-package persPageBlocks;
+package perspageblocks;
 
 import config.model.Contact;
 import enums.ContactTypes;
@@ -14,8 +14,6 @@ import java.util.Map;
 
 public class ContactsBlock extends BaseComponent {
 
-    private final By deleteButtonContainer = By.xpath(".//div[(contains(@class,'container__col') and contains(@class,'container__col_12') and contains(@class,'container__col_md-0'))]");
-    private final By deleteButton = By.xpath(".//button[contains(@class, 'js-formset-delete')]");
 
     @FindBy(xpath = "//div[contains(@class,'js-formset-row')]")
     private List<WebElement> contactContainer;
@@ -28,6 +26,8 @@ public class ContactsBlock extends BaseComponent {
     }
 
     private void deleteContact(WebElement contact) {
+        final By deleteButtonContainer = By.xpath(".//div[(contains(@class,'container__col') and contains(@class,'container__col_12') and contains(@class,'container__col_md-0'))]");
+        final By deleteButton = By.xpath(".//button[contains(@class, 'js-formset-delete')]");
         WebElement deleteButtonDiv = contact.findElement(deleteButtonContainer);
         deleteButtonDiv.findElement(deleteButton).click();
     }

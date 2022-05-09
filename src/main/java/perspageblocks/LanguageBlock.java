@@ -1,4 +1,4 @@
-package persPageBlocks;
+package perspageblocks;
 
 import enums.EnglishLevels;
 import org.openqa.selenium.By;

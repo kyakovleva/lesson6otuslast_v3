@@ -1,12 +1,12 @@
 package pages;
 
 import org.openqa.selenium.support.FindBy;
-import persPageBlocks.BaseComponent;
+import perspageblocks.BaseComponent;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-public class PersPage extends BaseComponent {
+public class PersPage extends BasePage {
 
     @FindBy(xpath = "//p[contains(@class,'header2-menu__item-text__username')]")
     private WebElement authMenu;

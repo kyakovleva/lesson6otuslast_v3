@@ -4,9 +4,9 @@ import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import persPageBlocks.BaseComponent;
+import perspageblocks.BaseComponent;
 
-public class MainPage extends BaseComponent {
+public class MainPage extends BasePage {
 
     @FindBy(xpath = "//span[@class='header2__auth-reg']")
     private WebElement authButton;

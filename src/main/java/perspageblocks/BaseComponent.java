@@ -1,4 +1,4 @@
-package persPageBlocks;
+package perspageblocks;
 
 import config.ServerConfig;
 import org.aeonbits.owner.ConfigFactory;
@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import utils.JsOperations;
 import utils.WaitMethods;
 
-public class BaseComponent {
+public abstract class BaseComponent {
     protected final WebDriver driver;
     protected final WaitMethods wait;
     protected final JsOperations js;

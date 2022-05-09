@@ -1,19 +1,17 @@
 import org.junit.Before;
-import persPageBlocks.LanguageBlock;
+import perspageblocks.LanguageBlock;
 import utils.DriverManager;
 import enums.WebDriverName;
 import exceptions.DriverNotFoundException;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.junit.After;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import pages.MainPage;
 import pages.PersPage;
-import persPageBlocks.ContactsBlock;
-import persPageBlocks.CountryBlock;
-import persPageBlocks.PersonalBlock;
+import perspageblocks.ContactsBlock;
+import perspageblocks.CountryBlock;
+import perspageblocks.PersonalBlock;
 
 import java.util.List;
 

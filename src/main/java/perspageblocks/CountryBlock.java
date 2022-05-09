@@ -1,4 +1,4 @@
-package persPageBlocks;
+package perspageblocks;
 
 
 import enums.Cities;
